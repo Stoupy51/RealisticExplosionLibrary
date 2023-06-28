@@ -16,4 +16,5 @@ scoreboard objectives add realistic_explosion.data dummy
 
 # Execute the function as the temporary marker
 execute summon marker run function realistic_explosion:explosion/main
+summon tnt
 

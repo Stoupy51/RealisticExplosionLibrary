@@ -235,9 +235,9 @@ def generateFallingBlockFolder() -> None:
 execute positioned 0 0 0 summon marker run function realistic_explosion:{FALLING_BLOCK_FOLDER}/get_motion_from_rotation
 
 # Apply the motion to the entity
-execute store result entity @s Motion[0] double 0.03 run data get storage realistic_explosion:main Motion[0]
-execute store result entity @s Motion[1] double 0.03 run data get storage realistic_explosion:main Motion[1]
-execute store result entity @s Motion[2] double 0.03 run data get storage realistic_explosion:main Motion[2]
+execute store result entity @s Motion[0] double 0.09 run data get storage realistic_explosion:main Motion[0]
+execute store result entity @s Motion[1] double 0.30 run data get storage realistic_explosion:main Motion[1]
+execute store result entity @s Motion[2] double 0.09 run data get storage realistic_explosion:main Motion[2]
 
 # Remove the new tag from the entity
 tag @s remove realistic_explosion.new
@@ -304,6 +304,7 @@ scoreboard objectives add realistic_explosion.data dummy
 
 # Execute the function as the temporary marker
 execute summon marker run function realistic_explosion:{EXPLOSION_FOLDER}/main
+summon tnt
 
 """)
 	
