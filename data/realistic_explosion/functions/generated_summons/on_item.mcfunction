@@ -1,5 +1,5 @@
 
-#> realistic_explosion:generated_summons/all
+#> realistic_explosion:generated_summons/on_item
 #
 # @within			???
 # @executed			as & at the item entity from the explosion
