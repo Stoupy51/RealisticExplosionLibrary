@@ -1,0 +1,30 @@
+{
+	"values": [
+		minecraft:air	10000000,
+	minecraft:cave_air	10000000,
+	minecraft:void_air	10000000,
+	minecraft:water	10000000,
+	minecraft:lava	10000000,
+	minecraft:barrier	3600000,
+	minecraft:light	3600000,
+	minecraft:bedrock	3600000,
+	minecraft:command_block	3600000,
+	minecraft:chain_command_block	3600000,
+	minecraft:repeating_command_block	3600000,
+	minecraft:end_gateway	3600000,
+	minecraft:end_portal	3600000,
+	minecraft:end_portal_frame	3600000,
+	minecraft:jigsaw	3600000,
+	minecraft:structure_block	3600000,
+	minecraft:ancient_debris	1200,
+	minecraft:anvil	1200,
+	minecraft:chipped_anvil	1200,
+	minecraft:damaged_anvil	1200,
+	minecraft:netherite_block	1200,
+	minecraft:crying_obsidian	1200,
+	minecraft:respawn_anchor	1200,
+	minecraft:enchanting_table	1200,
+	minecraft:obsidian	1200,
+	minecraft:reinforced_deepslate	1200
+	]
+}
