@@ -52,10 +52,13 @@ execute if score #length realistic_explosion.data matches 43 run function realis
 execute if score #length realistic_explosion.data matches 44 run function realistic_explosion:generated_summons/44
 
 # Get rotation looking at the origin of the explosion and kill the item entity
-tp @s ~ ~ ~ facing entity @e[type=marker,tag=realistic_explosion.origin,limit=1] feet
-data modify storage realistic_explosion:main Rotation set from entity @s Rotation
+execute at @s run tp @s ~ ~10 ~ facing entity @e[type=marker,tag=realistic_explosion.origin,limit=1] feet
+execute at @s run tp @s ~ ~-10 ~
+	     
+# Copy the rotation to the falling block and kill the item entity
+data modify entity @e[type=falling_block,tag=realistic_explosion.new,sort=nearest,distance=..1,limit=1] Rotation set from entity @s Rotation
 kill @s
 
-# Execute the function as the new falling block
-execute as @e[type=falling_block,tag=realistic_explosion.new,limit=1] at @s run function realistic_explosion:falling_block/main
+# Schedule the function that applies the explosion motion
+schedule function realistic_explosion:falling_block/apply_motion_to_all 2t
 

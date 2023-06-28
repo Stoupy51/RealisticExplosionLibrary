@@ -1,15 +1,15 @@
 {
 	"values": [
-		"#realistic_explosion:no_blast_resistance",
-		"minecraft:ancient_debris",
-		"minecraft:anvil",
-		"minecraft:chipped_anvil",
-		"minecraft:damaged_anvil",
-		"minecraft:netherite_block",
-		"minecraft:crying_obsidian",
-		"minecraft:respawn_anchor",
-		"minecraft:enchanting_table",
-		"minecraft:obsidian",
-		"minecraft:reinforced_deepslate"
+		{"required": false, "id": "#realistic_explosion:no_blast_resistance"},
+		{"required": false, "id": "minecraft:ancient_debris"},
+		{"required": false, "id": "minecraft:anvil"},
+		{"required": false, "id": "minecraft:chipped_anvil"},
+		{"required": false, "id": "minecraft:damaged_anvil"},
+		{"required": false, "id": "minecraft:netherite_block"},
+		{"required": false, "id": "minecraft:crying_obsidian"},
+		{"required": false, "id": "minecraft:respawn_anchor"},
+		{"required": false, "id": "minecraft:enchanting_table"},
+		{"required": false, "id": "minecraft:obsidian"},
+		{"required": false, "id": "minecraft:reinforced_deepslate"}
 	]
 }
