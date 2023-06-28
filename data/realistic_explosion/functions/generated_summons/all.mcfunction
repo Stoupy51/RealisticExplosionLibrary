@@ -1,9 +1,10 @@
 
-
 #> realistic_explosion:generated_summons/all
 #
 # @within			???
 # @executed			as & at the item entity from the explosion
+#
+# @output storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
 #
 # @description		Calculate the length of the item name and execute the corresponding function
 #
@@ -49,4 +50,12 @@ execute if score #length realistic_explosion.data matches 41 run function realis
 execute if score #length realistic_explosion.data matches 42 run function realistic_explosion:generated_summons/42
 execute if score #length realistic_explosion.data matches 43 run function realistic_explosion:generated_summons/43
 execute if score #length realistic_explosion.data matches 44 run function realistic_explosion:generated_summons/44
+
+# Get rotation looking at the origin of the explosion and kill the item entity
+tp @s ~ ~ ~ facing entity @e[type=marker,tag=realistic_explosion.origin,limit=1] feet
+data modify storage realistic_explosion:main Rotation set from entity @s Rotation
+kill @s
+
+# Execute the function as the new falling block
+execute as @e[type=falling_block,tag=realistic_explosion.new] at @s run function realistic_explosion:falling_block/main
 
