@@ -406,6 +406,40 @@ execute if score #power_state realistic_explosion.data matches 3 if block ~ ~ ~ 
 	print("- Generated explosion manager successfully")
 
 
+# Generate the zip file (../../RealisticExplosionLibrary.zip)
+def autogenerateZipFile() -> None:
+	
+	# Import the required modules
+	import zipfile
+	import os
+
+	# Paths
+	zip_file_path = "../../../RealisticExplosionLibrary.zip"
+	folder_to_zip_path = "../../../data"
+	pack_mcmeta_path = "../../../pack.mcmeta"
+
+	# Create the zip file
+	with zipfile.ZipFile(zip_file_path, "w") as zip_file:
+		
+		# Write the pack.mcmeta file
+		zip_file.write(pack_mcmeta_path, arcname="pack.mcmeta")
+		
+		# For each file in the folder, write it in the zip file
+		for root, dirs, files in os.walk(folder_to_zip_path):
+			for file in files:
+
+				# Ignore the .txt and .py files
+				if file.endswith(".txt") or file.endswith(".py"):
+					continue
+
+				# Add the file to the zip file
+				zip_file.write(os.path.join(root, file), arcname = "data/" + os.path.join(root, file)[len(folder_to_zip_path) + 1:])
+
+	# Print done
+	print("- Generated zip file successfully")
+
+
+
 # Colors
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
@@ -422,6 +456,7 @@ if __name__ == "__main__":
 	generateSummonsFiles()
 	generateFallingBlockFolder()
 	generateExplosionManager()
+	autogenerateZipFile()
 
 	print(f"\n{GREEN}Everything is done!{RESET} {YELLOW}(in {RED}{round(time.time() - start_time, 5)} {YELLOW}seconds){RESET}\n")
 
