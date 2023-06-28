@@ -1,0 +1,12 @@
+execute if data storage realistic_explosion:main {id:"minecraft:bell"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:bell"}}
+execute if data storage realistic_explosion:main {id:"minecraft:cake"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:cake"}}
+execute if data storage realistic_explosion:main {id:"minecraft:clay"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:clay"}}
+execute if data storage realistic_explosion:main {id:"minecraft:dirt"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:dirt"}}
+execute if data storage realistic_explosion:main {id:"minecraft:fern"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:fern"}}
+execute if data storage realistic_explosion:main {id:"minecraft:kelp"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:kelp"}}
+execute if data storage realistic_explosion:main {id:"minecraft:loom"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:loom"}}
+execute if data storage realistic_explosion:main {id:"minecraft:rail"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:rail"}}
+execute if data storage realistic_explosion:main {id:"minecraft:sand"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:sand"}}
+execute if data storage realistic_explosion:main {id:"minecraft:snow"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:snow"}}
+execute if data storage realistic_explosion:main {id:"minecraft:tuff"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:tuff"}}
+execute if data storage realistic_explosion:main {id:"minecraft:vine"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:vine"}}

@@ -1,0 +1,3 @@
+execute if data storage realistic_explosion:main {id:"minecraft:chiseled_polished_blackstone"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:chiseled_polished_blackstone"}}
+execute if data storage realistic_explosion:main {id:"minecraft:light_blue_glazed_terracotta"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:light_blue_glazed_terracotta"}}
+execute if data storage realistic_explosion:main {id:"minecraft:light_gray_glazed_terracotta"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:light_gray_glazed_terracotta"}}

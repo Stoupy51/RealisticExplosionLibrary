@@ -1,0 +1,17 @@
+execute if data storage realistic_explosion:main {id:"minecraft:barrier"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:barrier"}}
+execute if data storage realistic_explosion:main {id:"minecraft:bedrock"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:bedrock"}}
+execute if data storage realistic_explosion:main {id:"minecraft:beehive"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:beehive"}}
+execute if data storage realistic_explosion:main {id:"minecraft:calcite"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:calcite"}}
+execute if data storage realistic_explosion:main {id:"minecraft:conduit"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:conduit"}}
+execute if data storage realistic_explosion:main {id:"minecraft:diorite"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:diorite"}}
+execute if data storage realistic_explosion:main {id:"minecraft:dropper"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:dropper"}}
+execute if data storage realistic_explosion:main {id:"minecraft:end_rod"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:end_rod"}}
+execute if data storage realistic_explosion:main {id:"minecraft:furnace"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:furnace"}}
+execute if data storage realistic_explosion:main {id:"minecraft:granite"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:granite"}}
+execute if data storage realistic_explosion:main {id:"minecraft:jukebox"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:jukebox"}}
+execute if data storage realistic_explosion:main {id:"minecraft:lantern"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:lantern"}}
+execute if data storage realistic_explosion:main {id:"minecraft:lectern"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:lectern"}}
+execute if data storage realistic_explosion:main {id:"minecraft:oak_log"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:oak_log"}}
+execute if data storage realistic_explosion:main {id:"minecraft:pumpkin"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:pumpkin"}}
+execute if data storage realistic_explosion:main {id:"minecraft:red_bed"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:red_bed"}}
+execute if data storage realistic_explosion:main {id:"minecraft:spawner"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:spawner"}}
