@@ -419,7 +419,7 @@ def autogenerateZipFile() -> None:
 	pack_mcmeta_path = "../../../pack.mcmeta"
 
 	# Create the zip file
-	with zipfile.ZipFile(zip_file_path, "w") as zip_file:
+	with zipfile.ZipFile(zip_file_path, "w", zipfile.ZIP_DEFLATED) as zip_file:
 		
 		# Write the pack.mcmeta file
 		zip_file.write(pack_mcmeta_path, arcname="pack.mcmeta")
@@ -434,6 +434,9 @@ def autogenerateZipFile() -> None:
 
 				# Add the file to the zip file
 				zip_file.write(os.path.join(root, file), arcname = "data/" + os.path.join(root, file)[len(folder_to_zip_path) + 1:])
+		
+		# Close the zip file
+		zip_file.close()
 
 	# Print done
 	print("- Generated zip file successfully")
