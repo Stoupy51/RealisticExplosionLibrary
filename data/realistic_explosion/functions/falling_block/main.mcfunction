@@ -21,3 +21,6 @@ execute store result entity @s Motion[0] double 0.03 run data get storage realis
 execute store result entity @s Motion[1] double 0.03 run data get storage realistic_explosion:main Motion[1]
 execute store result entity @s Motion[2] double 0.03 run data get storage realistic_explosion:main Motion[2]
 
+# Remove the new tag from the entity
+tag @s remove realistic_explosion.new
+

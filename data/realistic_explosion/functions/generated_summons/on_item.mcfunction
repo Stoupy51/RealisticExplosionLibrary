@@ -57,5 +57,5 @@ data modify storage realistic_explosion:main Rotation set from entity @s Rotatio
 kill @s
 
 # Execute the function as the new falling block
-execute as @e[type=falling_block,tag=realistic_explosion.new] at @s run function realistic_explosion:falling_block/main
+execute as @e[type=falling_block,tag=realistic_explosion.new,limit=1] at @s run function realistic_explosion:falling_block/main
 
