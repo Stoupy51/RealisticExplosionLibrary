@@ -29,17 +29,75 @@ def generateExplodableBlocksTags() -> None:
 		if file.endswith(".json"):
 			os.remove(f"{BLOCKS_TAG_PATH}/{file}")
 
-	# Open the file "blast_resistance_blocks.txt" and read the content
-	with open(BLAST_RESISTANCE_BLOCKS_FILE, "r") as file:
+	# Open the file with every blocks and read the content
+	with open("block.txt", "r") as file:
 		blocks = file.read().splitlines()
 	
+	# Open the file with every blast resistance blocks and read the content
+	blast_resistance_dict = {}
+	with open(BLAST_RESISTANCE_BLOCKS_FILE, "r") as file:
+		for line in file.read().splitlines():
+			line = line.split("\t")
+			blast_resistance_dict[line[0]] = int(line[1])
+	
+	# Create a list of every blocks that have no blast resistance
+	blocks_no_blast_resistance = []
+	for block in blocks:
+		if block not in blast_resistance_dict:
+			blocks_no_blast_resistance.append(block)
+
 	## Generate 4 tags : all blocks, blocks equal and below 3600000, blocks equal and below 1200
 	# Create the file "all.json"
 	with open(f"{BLOCKS_TAG_PATH}/all.json", "w") as file:
-		blocks_beautify_json = ",\n\t".join(blocks)
-		file.write(f"""{{\n\t"values": [\n\t\t{blocks_beautify_json}\n\t]\n}}""")
+		blocks_beautify_json = "\",\n\t\t\"".join(blocks)
+		file.write(f"""{{\n\t"values": [\n\t\t"{blocks_beautify_json}"\n\t]\n}}""")
 	
 	# Create the file "equal_and_below_3600000.json"
+	with open(f"{BLOCKS_TAG_PATH}/equal_and_below_3600000.json", "w") as file:
+		
+		# Create a list of every blocks that have a blast resistance equal or below 3600000
+		current_block_list = blocks_no_blast_resistance.copy()
+		for block in blast_resistance_dict.keys():
+			if blast_resistance_dict[block] <= 3600000:
+				current_block_list.append(block)
+		
+		# Sort the list
+		current_block_list = sorted(current_block_list)
+
+		# Write the list in the file
+		blocks_beautify_json = "\",\n\t\t\"".join(current_block_list)
+		file.write(f"""{{\n\t"values": [\n\t\t"{blocks_beautify_json}"\n\t]\n}}""")
+	
+	# Create the file "equal_and_below_1200.json"
+	with open(f"{BLOCKS_TAG_PATH}/equal_and_below_1200.json", "w") as file:
+		
+		# Create a list of every blocks that have a blast resistance equal or below 1200
+		current_block_list = blocks_no_blast_resistance.copy()
+		for block in blast_resistance_dict.keys():
+			if blast_resistance_dict[block] <= 1200:
+				current_block_list.append(block)
+		
+		# Sort the list
+		current_block_list = sorted(current_block_list)
+
+		# Write the list in the file
+		blocks_beautify_json = "\",\n\t\t\"".join(current_block_list)
+		file.write(f"""{{\n\t"values": [\n\t\t"{blocks_beautify_json}"\n\t]\n}}""")
+	
+	# Create the file "no_blast_resistance.json"
+	with open(f"{BLOCKS_TAG_PATH}/no_blast_resistance.json", "w") as file:
+		
+		# Sort the list
+		blocks_no_blast_resistance = sorted(blocks_no_blast_resistance)
+
+		# Write the list in the file
+		blocks_beautify_json = "\",\n\t\t\"".join(blocks_no_blast_resistance)
+		file.write(f"""{{\n\t"values": [\n\t\t"{blocks_beautify_json}"\n\t]\n}}""")
+	
+	# Print done
+	print("- Generated explodable blocks tags successfully")
+
+
 
 
 # Return a list of items that are also blocks
