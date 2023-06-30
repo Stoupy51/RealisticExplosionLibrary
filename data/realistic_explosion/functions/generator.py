@@ -162,9 +162,10 @@ def generateSummonsFiles() -> None:
 		file.write(f"""
 #> realistic_explosion:{GENERATED_SUMMONS_FOLDER}/on_item
 #
-# @within			???
+# @within			realistic_explosion:{EXPLOSION_FOLDER}/main
 # @executed			as & at the item entity from the explosion
 #
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire"
 # @output storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
 #
 # @description		Calculate the length of the item name and execute the corresponding function
@@ -177,6 +178,9 @@ execute store result score #length realistic_explosion.data run data get entity 
 
 # Copy the item id to the storage
 data modify storage realistic_explosion:main id set from entity @s Item.id
+
+# If the falling block should be fire, set the id to "minecraft:fire"
+execute if score #falling_fire realistic_explosion.data matches 1 run data modify storage realistic_explosion:main id set value "minecraft:fire"
 
 # Execute the function that will summon the falling block
 """)
@@ -323,6 +327,7 @@ def generateExplosionManager() -> None:
 # @executed			as unknown entity & at the explosion origin
 #
 # @input score		#explosion_power realistic_explosion.data : the power of the explosion
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0 and resetting to 0 after the explosion)
 #
 # @description		Summons a temporary marker and execute the function that will handle the explosion
 #
@@ -334,6 +339,9 @@ scoreboard objectives add realistic_explosion.data dummy
 
 # Execute the function as the temporary marker
 execute summon marker run function realistic_explosion:{EXPLOSION_FOLDER}/main
+
+# Reset the falling_fire score
+scoreboard players reset #falling_fire realistic_explosion.data
 
 """)
 	
@@ -356,6 +364,8 @@ execute summon marker run function realistic_explosion:{EXPLOSION_FOLDER}/main
 # @executed			as the temporary marker & at the explosion origin
 #
 # @input score		#explosion_power realistic_explosion:data : the power of the explosion
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0 and resetting to 0 after the explosion)
+#
 # @output score		#power_state realistic_explosion:data : the power state of the explosion (0, 1, 2 or 3)
 #
 # @description		Execute the function that will handle the explosion
