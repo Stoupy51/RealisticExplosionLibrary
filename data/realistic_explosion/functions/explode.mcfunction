@@ -5,7 +5,7 @@
 # @executed			as unknown entity & at the explosion origin
 #
 # @input score		#explosion_power realistic_explosion.data : the power of the explosion
-# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0 and resetting to 0 after the explosion)
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0)
 #
 # @description		Summons a temporary marker and execute the function that will handle the explosion
 #
@@ -17,7 +17,4 @@ scoreboard objectives add realistic_explosion.data dummy
 
 # Execute the function as the temporary marker
 execute summon marker run function realistic_explosion:explosion/main
-
-# Reset the falling_fire score
-scoreboard players reset #falling_fire realistic_explosion.data
 

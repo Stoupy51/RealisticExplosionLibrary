@@ -327,7 +327,7 @@ def generateExplosionManager() -> None:
 # @executed			as unknown entity & at the explosion origin
 #
 # @input score		#explosion_power realistic_explosion.data : the power of the explosion
-# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0 and resetting to 0 after the explosion)
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0)
 #
 # @description		Summons a temporary marker and execute the function that will handle the explosion
 #
@@ -339,9 +339,6 @@ scoreboard objectives add realistic_explosion.data dummy
 
 # Execute the function as the temporary marker
 execute summon marker run function realistic_explosion:{EXPLOSION_FOLDER}/main
-
-# Reset the falling_fire score
-scoreboard players reset #falling_fire realistic_explosion.data
 
 """)
 	
@@ -364,7 +361,7 @@ scoreboard players reset #falling_fire realistic_explosion.data
 # @executed			as the temporary marker & at the explosion origin
 #
 # @input score		#explosion_power realistic_explosion:data : the power of the explosion
-# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0 and resetting to 0 after the explosion)
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire" (default: 0)
 #
 # @output score		#power_state realistic_explosion:data : the power state of the explosion (0, 1, 2 or 3)
 #
