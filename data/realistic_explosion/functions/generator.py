@@ -402,7 +402,7 @@ execute if score #power_state realistic_explosion.data matches 3 run fill ~-1 ~-
 						continue
 
 					# Write the command in the file
-					file.write(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ tnt run summon tnt\n")
+					file.write(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {{Fuse:10s}}\n")
 					file.write(f"execute positioned ~{x} ~{y} ~{z} unless block ~ ~ ~ air run function realistic_explosion:{EXPLOSION_FOLDER}/on_block\n")
 		
 		# Write the following lines

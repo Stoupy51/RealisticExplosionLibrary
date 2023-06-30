@@ -32,113 +32,113 @@ execute if score #power_state realistic_explosion.data matches 2 run fill ~-1 ~-
 execute if score #power_state realistic_explosion.data matches 3 run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #realistic_explosion:all
 
 # For each 9 + 9 + 9 + 9 + 9 + 9 blocks stick-around the explosion origin, execute the function that will handle the block
-execute positioned ~-2 ~-1 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~-1 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~-1 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~-1 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~-1 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~-1 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~-1 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~-1 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~-1 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~0 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~0 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~0 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~0 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~0 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~0 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~0 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~0 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~0 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~1 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~1 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~1 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~1 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~1 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~1 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-2 ~1 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-2 ~1 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-2 ~1 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~-2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~-2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~-2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~-1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~-1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~0 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~0 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~0 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~0 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~-1 ~2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~-1 ~2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~-1 ~2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~-2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~-2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~-2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~-1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~-1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~0 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~0 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~0 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~0 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~0 ~2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~0 ~2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~0 ~2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~-2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~-2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~-2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~-2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~-2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~-2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~-1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~-1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~-1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~-1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~0 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~0 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~0 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~0 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~0 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~1 ~-2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~1 ~-2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~1 ~2 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~1 ~2 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~1 ~2 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~2 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~2 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~2 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~2 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~2 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~1 ~2 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~1 ~2 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~1 ~2 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~-1 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~-1 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~-1 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~-1 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~-1 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~-1 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~-1 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~-1 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~-1 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~0 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~0 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~0 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~0 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~0 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~0 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~0 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~0 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~0 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~1 ~-1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~1 ~-1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~1 ~-1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~1 ~0 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~1 ~0 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~1 ~0 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
-execute positioned ~2 ~1 ~1 if block ~ ~ ~ tnt run summon tnt
+execute positioned ~2 ~1 ~1 if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:10s}
 execute positioned ~2 ~1 ~1 unless block ~ ~ ~ air run function realistic_explosion:explosion/on_block
 
 # For each item that is not tagged as "realistic_explosion.old", execute the function that will handle the item
