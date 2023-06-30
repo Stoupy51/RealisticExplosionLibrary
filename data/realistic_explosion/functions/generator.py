@@ -417,7 +417,7 @@ tag @e[type=item,tag=realistic_explosion.old] remove realistic_explosion.old
 kill @s
 
 """)
-	
+
 	# Open the on_block file
 	with open(f"{EXPLOSION_FOLDER}/on_block.mcfunction", "w") as file:
 
