@@ -121,7 +121,7 @@ def getListFromItemsAndBlock() -> list:
 def generateSummonsFiles() -> None:
 	
 	# Get the list of items that are also blocks
-	items = getListFromItemsAndBlock()
+	items = getListFromItemsAndBlock() + ["minecraft:fire", "minecraft:lava", "minecraft:water"] # Special blocks just in case
 	
 	# Create the folder if it doesn't exist
 	if not os.path.exists(GENERATED_SUMMONS_FOLDER):

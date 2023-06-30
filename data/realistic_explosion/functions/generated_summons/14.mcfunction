@@ -10,3 +10,5 @@ execute if data storage realistic_explosion:main {id:"minecraft:sand"} run summo
 execute if data storage realistic_explosion:main {id:"minecraft:snow"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:snow"}}
 execute if data storage realistic_explosion:main {id:"minecraft:tuff"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:tuff"}}
 execute if data storage realistic_explosion:main {id:"minecraft:vine"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:vine"}}
+execute if data storage realistic_explosion:main {id:"minecraft:fire"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:fire"}}
+execute if data storage realistic_explosion:main {id:"minecraft:lava"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:lava"}}

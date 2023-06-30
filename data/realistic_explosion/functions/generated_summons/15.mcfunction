@@ -13,3 +13,4 @@ execute if data storage realistic_explosion:main {id:"minecraft:sculk"} run summ
 execute if data storage realistic_explosion:main {id:"minecraft:stone"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:stone"}}
 execute if data storage realistic_explosion:main {id:"minecraft:torch"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:torch"}}
 execute if data storage realistic_explosion:main {id:"minecraft:wheat"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:wheat"}}
+execute if data storage realistic_explosion:main {id:"minecraft:water"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:water"}}
