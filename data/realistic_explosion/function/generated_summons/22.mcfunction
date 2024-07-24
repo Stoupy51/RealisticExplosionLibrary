@@ -17,6 +17,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:bubble_coral"} r
 execute if data storage realistic_explosion:main {id:"minecraft:cherry_fence"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:cherry_fence"}}
 execute if data storage realistic_explosion:main {id:"minecraft:chorus_plant"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:chorus_plant"}}
 execute if data storage realistic_explosion:main {id:"minecraft:copper_block"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:copper_block"}}
+execute if data storage realistic_explosion:main {id:"minecraft:copper_grate"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:copper_grate"}}
 execute if data storage realistic_explosion:main {id:"minecraft:creeper_head"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:creeper_head"}}
 execute if data storage realistic_explosion:main {id:"minecraft:crimson_door"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:crimson_door"}}
 execute if data storage realistic_explosion:main {id:"minecraft:crimson_sign"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:crimson_sign"}}

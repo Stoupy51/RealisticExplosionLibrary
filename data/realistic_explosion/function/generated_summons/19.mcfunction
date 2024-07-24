@@ -29,4 +29,6 @@ execute if data storage realistic_explosion:main {id:"minecraft:sandstone"} run 
 execute if data storage realistic_explosion:main {id:"minecraft:soul_sand"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:soul_sand"}}
 execute if data storage realistic_explosion:main {id:"minecraft:soul_soil"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:soul_soil"}}
 execute if data storage realistic_explosion:main {id:"minecraft:sunflower"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:sunflower"}}
+execute if data storage realistic_explosion:main {id:"minecraft:tuff_slab"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:tuff_slab"}}
+execute if data storage realistic_explosion:main {id:"minecraft:tuff_wall"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:tuff_wall"}}
 execute if data storage realistic_explosion:main {id:"minecraft:white_bed"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:white_bed"}}

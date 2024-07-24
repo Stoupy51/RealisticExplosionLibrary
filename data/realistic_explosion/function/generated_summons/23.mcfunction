@@ -18,6 +18,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:cherry_leaves"} 
 execute if data storage realistic_explosion:main {id:"minecraft:cherry_planks"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:cherry_planks"}}
 execute if data storage realistic_explosion:main {id:"minecraft:cherry_stairs"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:cherry_stairs"}}
 execute if data storage realistic_explosion:main {id:"minecraft:chipped_anvil"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:chipped_anvil"}}
+execute if data storage realistic_explosion:main {id:"minecraft:chiseled_tuff"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:chiseled_tuff"}}
 execute if data storage realistic_explosion:main {id:"minecraft:chorus_flower"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:chorus_flower"}}
 execute if data storage realistic_explosion:main {id:"minecraft:command_block"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:command_block"}}
 execute if data storage realistic_explosion:main {id:"minecraft:crimson_fence"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:crimson_fence"}}
@@ -53,6 +54,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:orange_candle"} 
 execute if data storage realistic_explosion:main {id:"minecraft:orange_carpet"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:orange_carpet"}}
 execute if data storage realistic_explosion:main {id:"minecraft:pink_concrete"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:pink_concrete"}}
 execute if data storage realistic_explosion:main {id:"minecraft:pitcher_plant"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:pitcher_plant"}}
+execute if data storage realistic_explosion:main {id:"minecraft:polished_tuff"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:polished_tuff"}}
 execute if data storage realistic_explosion:main {id:"minecraft:purple_banner"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:purple_banner"}}
 execute if data storage realistic_explosion:main {id:"minecraft:purple_candle"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:purple_candle"}}
 execute if data storage realistic_explosion:main {id:"minecraft:purple_carpet"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:purple_carpet"}}
@@ -73,6 +75,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:spruce_planks"} 
 execute if data storage realistic_explosion:main {id:"minecraft:spruce_stairs"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:spruce_stairs"}}
 execute if data storage realistic_explosion:main {id:"minecraft:sticky_piston"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:sticky_piston"}}
 execute if data storage realistic_explosion:main {id:"minecraft:trapped_chest"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:trapped_chest"}}
+execute if data storage realistic_explosion:main {id:"minecraft:trial_spawner"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:trial_spawner"}}
 execute if data storage realistic_explosion:main {id:"minecraft:tripwire_hook"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:tripwire_hook"}}
 execute if data storage realistic_explosion:main {id:"minecraft:warped_button"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:warped_button"}}
 execute if data storage realistic_explosion:main {id:"minecraft:warped_fungus"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:warped_fungus"}}

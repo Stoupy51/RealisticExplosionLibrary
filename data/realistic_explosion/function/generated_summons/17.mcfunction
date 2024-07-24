@@ -3,6 +3,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:bedrock"} run su
 execute if data storage realistic_explosion:main {id:"minecraft:beehive"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:beehive"}}
 execute if data storage realistic_explosion:main {id:"minecraft:calcite"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:calcite"}}
 execute if data storage realistic_explosion:main {id:"minecraft:conduit"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:conduit"}}
+execute if data storage realistic_explosion:main {id:"minecraft:crafter"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:crafter"}}
 execute if data storage realistic_explosion:main {id:"minecraft:diorite"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:diorite"}}
 execute if data storage realistic_explosion:main {id:"minecraft:dropper"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:dropper"}}
 execute if data storage realistic_explosion:main {id:"minecraft:end_rod"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:end_rod"}}

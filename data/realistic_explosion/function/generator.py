@@ -1,9 +1,10 @@
 
 ## Python function that aims to generate .mcfunction files that will handle which falling block will be summoned
-## Items and Blocks are retrieved manually from: https://github.com/PixiGeko/Minecraft-generated-data/blob/master/1.20/releases/1.20.1/custom-generated/registries/item.txt
+## Items and Blocks are retrieved from PixiGeko's Minecraft-generated-data repository
 
 # Imports
 import os
+import requests
 
 # Stop if the execution is not in the same folder as the script
 if os.getcwd() != os.path.dirname(os.path.realpath(__file__)):
@@ -12,10 +13,12 @@ if os.getcwd() != os.path.dirname(os.path.realpath(__file__)):
 
 # Constants
 BLAST_RESISTANCE_BLOCKS_FILE = "blast_resistance_blocks.txt"	# https://minecraft.fandom.com/wiki/Explosion#Blast_resistance
-BLOCKS_TAG_PATH = "../tags/blocks"
+BLOCKS_TAG_PATH = "../tags/block"
 GENERATED_SUMMONS_FOLDER = "generated_summons"
 FALLING_BLOCK_FOLDER = "falling_block"
 EXPLOSION_FOLDER = "explosion"
+ITEM_TXT = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/1.21/releases/1.21/custom-generated/registries/item.txt"
+BLOCK_TXT = "https://raw.githubusercontent.com/PixiGeko/Minecraft-generated-data/master/1.21/releases/1.21/custom-generated/registries/block.txt"
 
 # Generate the list of blocks that can be destroyed by the explosion by steps
 def generateExplodableBlocksTags() -> None:
@@ -30,8 +33,8 @@ def generateExplodableBlocksTags() -> None:
 			os.remove(f"{BLOCKS_TAG_PATH}/{file}")
 
 	# Open the file with every blocks and read the content
-	with open("block.txt", "r") as file:
-		blocks = file.read().splitlines()
+	with requests.get(BLOCK_TXT) as response:
+		blocks = response.text.splitlines()
 	
 	# Open the file with every blast resistance blocks and read the content
 	blast_resistance_dict = {}
@@ -101,11 +104,11 @@ def generateExplodableBlocksTags() -> None:
 # Return a list of items that are also blocks
 def getListFromItemsAndBlock() -> list:
 	
-	# Open the file "item.txt" and "block.txt" and read the content
-	with open("item.txt", "r") as file:
-		items = file.read().splitlines()
-	with open("block.txt", "r") as file:
-		blocks = file.read().splitlines()
+	# Open the urls "item.txt" and "block.txt" and read the content
+	with requests.get(ITEM_TXT) as response:
+		items = response.text.splitlines()
+	with requests.get(BLOCK_TXT) as response:
+		blocks = response.text.splitlines()
 	
 	# For each item, add it to the final list if it's in the block list
 	final_list = []

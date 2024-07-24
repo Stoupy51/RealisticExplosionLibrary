@@ -22,6 +22,7 @@ execute if data storage realistic_explosion:main {id:"minecraft:glass_pane"} run
 execute if data storage realistic_explosion:main {id:"minecraft:gold_block"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:gold_block"}}
 execute if data storage realistic_explosion:main {id:"minecraft:green_wool"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:green_wool"}}
 execute if data storage realistic_explosion:main {id:"minecraft:grindstone"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:grindstone"}}
+execute if data storage realistic_explosion:main {id:"minecraft:heavy_core"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:heavy_core"}}
 execute if data storage realistic_explosion:main {id:"minecraft:horn_coral"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:horn_coral"}}
 execute if data storage realistic_explosion:main {id:"minecraft:iron_block"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:iron_block"}}
 execute if data storage realistic_explosion:main {id:"minecraft:jungle_log"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:jungle_log"}}
