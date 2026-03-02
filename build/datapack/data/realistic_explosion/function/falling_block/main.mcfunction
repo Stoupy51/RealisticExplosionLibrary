@@ -1,0 +1,35 @@
+
+#> realistic_explosion:falling_block/main
+#
+# @within	realistic_explosion:generated_summons/on_item
+#			realistic_explosion:falling_block/apply_motion_to_all [ at @s ]
+#
+# @executed			as & at the new falling block
+# 
+# @out storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
+# @output storage	realistic_explosion:main Motion : the motion of the entity
+# 
+# @description		Push away the falling block from the explosion origin
+# 
+# @warning			This file is auto-generated, do not edit it manually!
+#
+
+# Get the rotation looking at the origin of the explosion
+data modify storage realistic_explosion:main Rotation set from entity @s Rotation
+
+## Launch the entity
+# Get the motion of the entity by summoning a temporary marker
+execute positioned 0 0 0 summon marker run function realistic_explosion:falling_block/get_motion_from_rotation
+
+# Apply the motion to the entity
+execute store result entity @s Motion[0] double 0.01 run data get storage realistic_explosion:main Motion[0]
+execute store result entity @s Motion[1] double 0.01 run data get storage realistic_explosion:main Motion[1]
+execute store result entity @s Motion[2] double 0.01 run data get storage realistic_explosion:main Motion[2]
+
+# Make clients update the entity nbt
+data modify entity @s Glowing set value 1b
+data modify entity @s Glowing set value 0b
+
+# Remove the new tag from the entity
+tag @s remove realistic_explosion.new
+

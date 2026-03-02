@@ -1,0 +1,71 @@
+
+#> realistic_explosion:generated_summons/on_item
+#
+# @within	realistic_explosion:explosion/main
+#			realistic_explosion:explosion/main [ as @e[type=item,tag=!realistic_explosion.old] & at @s ]
+#
+# @executed			as & at the item entity from the explosion
+# 
+# @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire"
+# @output storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
+# 
+# @description		Calculate the length of the item name and execute the corresponding function
+# 
+# @warning			This file is auto-generated, do not edit it manually!
+#
+
+# Copy the item id to the storage
+data modify storage realistic_explosion:main id set from entity @s Item.id
+
+# If the falling block should be fire, set the id to "minecraft:fire"
+execute if score #falling_fire realistic_explosion.data matches 1 run data modify storage realistic_explosion:main id set value "minecraft:fire"
+
+# Get the length of the item name
+execute store result score #length realistic_explosion.data run data get storage realistic_explosion:main id
+
+# Execute the function that will summon the falling block
+execute if score #length realistic_explosion.data matches 13 run function realistic_explosion:generated_summons/13
+execute if score #length realistic_explosion.data matches 14 run function realistic_explosion:generated_summons/14
+execute if score #length realistic_explosion.data matches 15 run function realistic_explosion:generated_summons/15
+execute if score #length realistic_explosion.data matches 16 run function realistic_explosion:generated_summons/16
+execute if score #length realistic_explosion.data matches 17 run function realistic_explosion:generated_summons/17
+execute if score #length realistic_explosion.data matches 18 run function realistic_explosion:generated_summons/18
+execute if score #length realistic_explosion.data matches 19 run function realistic_explosion:generated_summons/19
+execute if score #length realistic_explosion.data matches 20 run function realistic_explosion:generated_summons/20
+execute if score #length realistic_explosion.data matches 21 run function realistic_explosion:generated_summons/21
+execute if score #length realistic_explosion.data matches 22 run function realistic_explosion:generated_summons/22
+execute if score #length realistic_explosion.data matches 23 run function realistic_explosion:generated_summons/23
+execute if score #length realistic_explosion.data matches 24 run function realistic_explosion:generated_summons/24
+execute if score #length realistic_explosion.data matches 25 run function realistic_explosion:generated_summons/25
+execute if score #length realistic_explosion.data matches 26 run function realistic_explosion:generated_summons/26
+execute if score #length realistic_explosion.data matches 27 run function realistic_explosion:generated_summons/27
+execute if score #length realistic_explosion.data matches 28 run function realistic_explosion:generated_summons/28
+execute if score #length realistic_explosion.data matches 29 run function realistic_explosion:generated_summons/29
+execute if score #length realistic_explosion.data matches 30 run function realistic_explosion:generated_summons/30
+execute if score #length realistic_explosion.data matches 31 run function realistic_explosion:generated_summons/31
+execute if score #length realistic_explosion.data matches 32 run function realistic_explosion:generated_summons/32
+execute if score #length realistic_explosion.data matches 33 run function realistic_explosion:generated_summons/33
+execute if score #length realistic_explosion.data matches 34 run function realistic_explosion:generated_summons/34
+execute if score #length realistic_explosion.data matches 35 run function realistic_explosion:generated_summons/35
+execute if score #length realistic_explosion.data matches 36 run function realistic_explosion:generated_summons/36
+execute if score #length realistic_explosion.data matches 37 run function realistic_explosion:generated_summons/37
+execute if score #length realistic_explosion.data matches 38 run function realistic_explosion:generated_summons/38
+execute if score #length realistic_explosion.data matches 39 run function realistic_explosion:generated_summons/39
+execute if score #length realistic_explosion.data matches 40 run function realistic_explosion:generated_summons/40
+execute if score #length realistic_explosion.data matches 41 run function realistic_explosion:generated_summons/41
+execute if score #length realistic_explosion.data matches 42 run function realistic_explosion:generated_summons/42
+execute if score #length realistic_explosion.data matches 43 run function realistic_explosion:generated_summons/43
+execute if score #length realistic_explosion.data matches 44 run function realistic_explosion:generated_summons/44
+execute if score #length realistic_explosion.data matches 45 run function realistic_explosion:generated_summons/45
+
+# Get rotation looking at the origin of the explosion and kill the item entity
+execute at @s run tp @s ~ ~10 ~ facing entity @e[type=marker,tag=realistic_explosion.origin,limit=1] feet
+execute at @s run tp @s ~ ~-10 ~
+
+# Copy the rotation to the falling block and kill the item entity
+data modify entity @e[type=falling_block,tag=realistic_explosion.new,sort=nearest,distance=..1,limit=1] Rotation set from entity @s Rotation
+kill @s
+
+# Schedule the function that applies the explosion motion
+schedule function realistic_explosion:falling_block/apply_motion_to_all 2t
+

@@ -1,0 +1,9 @@
+
+#> realistic_explosion:generated_summons/42
+#
+# @within	realistic_explosion:generated_summons/on_item
+#
+
+execute if data storage realistic_explosion:main {id:"minecraft:polished_blackstone_brick_stairs"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:polished_blackstone_brick_stairs"}}
+execute if data storage realistic_explosion:main {id:"minecraft:waxed_oxidized_cut_copper_stairs"} run summon falling_block ~ ~ ~ {Tags:["realistic_explosion.new"],DropItem:0b,BlockState:{Name:"minecraft:waxed_oxidized_cut_copper_stairs"}}
+

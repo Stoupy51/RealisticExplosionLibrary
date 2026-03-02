@@ -1,0 +1,10 @@
+{
+	"values": [
+		{"required": false,"id": "#realistic_explosion:equal_and_below_3600000"},
+		{"required": false,"id": "minecraft:air"},
+		{"required": false,"id": "minecraft:cave_air"},
+		{"required": false,"id": "minecraft:void_air"},
+		{"required": false,"id": "minecraft:water"},
+		{"required": false,"id": "minecraft:lava"}
+	]
+}
