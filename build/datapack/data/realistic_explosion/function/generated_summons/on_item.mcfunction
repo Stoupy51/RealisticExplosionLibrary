@@ -1,11 +1,10 @@
 
 #> realistic_explosion:generated_summons/on_item
 #
-# @within	realistic_explosion:explosion/main
-#			realistic_explosion:explosion/main [ as @e[type=item,tag=!realistic_explosion.old] & at @s ]
+# @executed	as @e[type=item,tag=!realistic_explosion.old] & at @s
 #
-# @executed			as & at the item entity from the explosion
-# 
+# @within	realistic_explosion:explosion/main [ as @e[type=item,tag=!realistic_explosion.old] & at @s ]
+#
 # @input score		#falling_fire realistic_explosion.data : indicates if the explosion should spawn falling block "fire"
 # @output storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
 # 

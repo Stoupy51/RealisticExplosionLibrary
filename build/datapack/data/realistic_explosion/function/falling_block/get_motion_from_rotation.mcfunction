@@ -1,11 +1,10 @@
 
 #> realistic_explosion:falling_block/get_motion_from_rotation
 #
-# @within	realistic_explosion:falling_block/main
-#			realistic_explosion:falling_block/main [ positioned 0 0 0 ]
+# @executed	positioned 0 0 0
 #
-# @executed			as the temporary marker & at the new falling block
-# 
+# @within	realistic_explosion:falling_block/main [ positioned 0 0 0 ]
+#
 # @input storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
 # @output storage	realistic_explosion:main Motion : the motion of the entity
 # 

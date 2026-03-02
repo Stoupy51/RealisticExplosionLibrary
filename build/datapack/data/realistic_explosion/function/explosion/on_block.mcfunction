@@ -1,8 +1,9 @@
 
 #> realistic_explosion:explosion/on_block
 #
-# @within	realistic_explosion:explosion/main
-#			realistic_explosion:explosion/main [ positioned ~-2 ~-1 ~-1 ]
+# @executed	positioned ~-2 ~-1 ~-1
+#
+# @within	realistic_explosion:explosion/main [ positioned ~-2 ~-1 ~-1 ]
 #			realistic_explosion:explosion/main [ positioned ~-2 ~-1 ~0 ]
 #			realistic_explosion:explosion/main [ positioned ~-2 ~-1 ~1 ]
 #			realistic_explosion:explosion/main [ positioned ~-2 ~0 ~-1 ]
@@ -57,8 +58,6 @@
 #			realistic_explosion:explosion/main [ positioned ~2 ~1 ~0 ]
 #			realistic_explosion:explosion/main [ positioned ~2 ~1 ~1 ]
 #
-# @executed			as the temporary marker & at a position of a block to destroy
-# 
 # @input score		#power_state realistic_explosion.data : the power state of the explosion (0, 1, 2 or 3)
 # 
 # @description		Destroys the block if it can be destroyed by the explosion

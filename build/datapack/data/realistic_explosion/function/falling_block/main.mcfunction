@@ -1,11 +1,10 @@
 
 #> realistic_explosion:falling_block/main
 #
-# @within	realistic_explosion:generated_summons/on_item
-#			realistic_explosion:falling_block/apply_motion_to_all [ at @s ]
+# @executed	at @s
 #
-# @executed			as & at the new falling block
-# 
+# @within	realistic_explosion:falling_block/apply_motion_to_all [ at @s ]
+#
 # @out storage	realistic_explosion:main Rotation : the rotation looking at the origin of the explosion
 # @output storage	realistic_explosion:main Motion : the motion of the entity
 # 

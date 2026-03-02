@@ -1,6 +1,8 @@
 
 #> realistic_explosion:generated_summons/29
 #
+# @executed	as @e[type=item,tag=!realistic_explosion.old] & at @s
+#
 # @within	realistic_explosion:generated_summons/on_item
 #
 

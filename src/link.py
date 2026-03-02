@@ -125,10 +125,7 @@ def generate_summons_files(ctx: Context, ns: str) -> None:
 
     # Create the on_item function
     on_item_content = f"""
-#> {ns}:{GENERATED_SUMMONS_FOLDER}/on_item
-#
-# @within			{ns}:{EXPLOSION_FOLDER}/main
-# @executed			as & at the item entity from the explosion
+#> on_item
 #
 # @input score		#falling_fire {ns}.data : indicates if the explosion should spawn falling block "fire"
 # @output storage	{ns}:main Rotation : the rotation looking at the origin of the explosion
@@ -175,10 +172,7 @@ def generate_falling_block_folder(ctx: Context, ns: str) -> None:
 
     # apply_motion_to_all.mcfunction
     apply_motion_content = f"""
-#> {ns}:{FALLING_BLOCK_FOLDER}/apply_motion_to_all
-#
-# @within			{ns}:{FALLING_BLOCK_FOLDER}
-# @executed			default context
+#> apply_motion_to_all
 #
 # @description		Apply the explosion motion to all falling blocks
 #
@@ -193,10 +187,7 @@ execute as @e[type=falling_block,tag=realistic_explosion.new] at @s run function
 
     # main.mcfunction
     main_content = f"""
-#> {ns}:{FALLING_BLOCK_FOLDER}/main
-#
-# @within			{ns}:{GENERATED_SUMMONS_FOLDER}/on_item
-# @executed			as & at the new falling block
+#> main
 #
 # @out storage	{ns}:main Rotation : the rotation looking at the origin of the explosion
 # @output storage	{ns}:main Motion : the motion of the entity
@@ -230,10 +221,7 @@ tag @s remove realistic_explosion.new
 
     # get_motion_from_rotation.mcfunction
     get_motion_content = f"""
-#> {ns}:{FALLING_BLOCK_FOLDER}/get_motion_from_rotation
-#
-# @within			{ns}:{FALLING_BLOCK_FOLDER}/main
-# @executed			as the temporary marker & at the new falling block
+#> get_motion_from_rotation
 #
 # @input storage	{ns}:main Rotation : the rotation looking at the origin of the explosion
 # @output storage	{ns}:main Motion : the motion of the entity
@@ -352,10 +340,7 @@ kill @s
 
     # explosion/on_block.mcfunction
     on_block_content = f"""
-#> {ns}:{EXPLOSION_FOLDER}/on_block
-#
-# @within			{ns}:{EXPLOSION_FOLDER}/main
-# @executed			as the temporary marker & at a position of a block to destroy
+#> on_block
 #
 # @input score		#power_state {ns}.data : the power state of the explosion (0, 1, 2 or 3)
 #
