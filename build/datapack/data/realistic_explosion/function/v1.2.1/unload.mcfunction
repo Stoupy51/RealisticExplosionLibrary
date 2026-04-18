@@ -1,11 +1,11 @@
 
-#> realistic_explosion:v1.2.0/unload
+#> realistic_explosion:v1.2.1/unload
 #
 # @within	#realistic_explosion:unload
 #
 
 # Kill entities with custom tags
-execute as @e[tag=realistic_explosion.new] at @s run function realistic_explosion:v1.2.0/unload/safe_kill
+execute as @e[tag=realistic_explosion.new] at @s run function realistic_explosion:v1.2.1/unload/safe_kill
 
 # Remove scoreboard objectives
 scoreboard objectives remove load.status
