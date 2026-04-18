@@ -41,6 +41,7 @@ pipeline:
     - "src.link" # User code
     - "stewbeet.plugins.finalyze.basic_datapack_structure"
     - "stewbeet.plugins.finalyze.dependencies"
+    - "stewbeet.plugins.finalyze.unload"
     - "stewbeet.plugins.finalyze.last_final"
     - "stewbeet.plugins.auto.headers"
     - "stewbeet.plugins.archive"
@@ -50,7 +51,7 @@ pipeline:
 # Generic dict which holds extra information usable by plugins
 meta:
     # List of supported Minecraft versions (used when uploading to Modrinth or Smithed)
-    mc_supports: ["1.21.11", "infinite"]
+    mc_supports: ["1.21.11", "26.1", "26.1.1", "26.1.2", "infinite"]
 
     # StewBeet specific configuration
     stewbeet:
